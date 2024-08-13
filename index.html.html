@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Web</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="calculadora">   
+    <div class="display" id="display">0</div>
+    <div class="botoes">
+    <section class="botoes1">
+    <table>                 
+        <tr>     
+            <td><button onclick="clearDisplay()">C</td>    
+            <td><button onclick="appendToDisplay('%')">%</button></td>
+            <td><button onclick="appendToDisplay('/')">/</button></td>
+            <td><button onclick= "appendToDisplay('X')">*</button></td>
+        </tr>
+            <td><button onclick="appendToDisplay('7')">7</button></td>
+            <td><button onclick="appendToDisplay('8')">8</button></td>   
+            <td><button onclick="appendToDisplay('9')">9</button></td>  
+            <td><button onclick="appendToDisplay('-')">-</button></td> 
+        </tr>
+    
+            <section class="botoes2"> 
+        <tr>        
+            <td><button onclick="appendToDisplay('4')">4</button></td>
+            <td><button onclick="appendToDisplay('5')">5</button></td>
+            <td><button onclick="appendToDisplay('6')">6</button></td> 
+            <td><button onclick="appendToDisplay('+')">+</button></td> 
+        </td>        
+    </section>
+        <tr>
+            
+            <td><button onclick="appendToDisplay('1')">1</button></td> 
+            <td><button onclick="appendToDisplay('2')">2</button></td> 
+            <td><button onclick="appendToDisplay('3')">3</button></td>
+            <td rowspan="2"><button style="height: 106px" class="botaoequal"id="equal" onclick="calculateResult()">=</button></td>    
+        </tr> 
+        <tr>
+            <td colspan="2"><button style="width: 106px" onclick="appendToDisplay('0')">0</button></td>
+            <td><button onclick="appendToDisplay('.')">.</button></td>          
+        </tr>
+    </table>
+    </div>        
+</section>    
+    </div>
+    
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

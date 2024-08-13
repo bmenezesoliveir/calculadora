@@ -1,0 +1,12 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": ["calculadora"],
+  "author": "Bruno Menezes",
+  "license": "MIT",
+  "description": "Estudo de JavaScript e CSS"
+}
